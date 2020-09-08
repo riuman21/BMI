@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2F36;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3rem;
+    color: #FF6800;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+/* font-family: 'Oswald', sans-serif; */
+
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    color: #FF6800;
+    margin-top: 20px;
+}
+
+#container {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#btn {
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    background : #3D4248;
+    color: #C9BBAE;
+}
+
+#btn:hover {
+    background: #4C5056;
+    color: #FF6800;
+}
+
+#weight-input {
+    margin-bottom: 15px;
+}
+
+
+label {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    color: #C9BBAE;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+input {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #2B2F36;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    background: #EFEFEF;
+}
+
+.categories {
+    padding-top: 15px;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: #C9BBAE;
+    list-style: none;
+    padding: 5px;
+}
+
+@media only screen and (max-width : 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin-top: 15px;
+        padding: 10px;
+        text-decoration-line: overline;
+        text-decoration-line: underline;
+    }
+
+    #container {
+        width: 290px;
+    }
+
+    #btn {
+        font-size: 1rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+
+    input {
+        padding: 5px;
+    }
+
+    .categories {
+        padding-top: 5px;
+    }
+
+    li {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+}
